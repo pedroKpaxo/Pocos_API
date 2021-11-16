@@ -10,12 +10,15 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import generics
 from rest_framework import filters
+from Helpers.pagination import CustomPageNumberPagination
 
 class WellList(generics.ListAPIView):
     
     queryset= Well.objects.all()
     serializer_class = WellSerializer
     filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+    pagination_class = CustomPageNumberPagination
+
 
     filterset_fields = ['bacia', 'estado',]
     

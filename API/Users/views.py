@@ -1,5 +1,5 @@
 from django.views import generic
-from Users.models import Poco_User
+from Users.models import CustomPocoUser
 from Users.serializers import UserSerializer
 from django.http import Http404
 from rest_framework.views import APIView
@@ -12,7 +12,7 @@ from django.shortcuts import get_object_or_404, redirect
 
 class UserList(generics.ListAPIView):
     
-    queryset= Poco_User.objects.all()
+    queryset= CustomPocoUser.objects.all()
     serializer_class = UserSerializer
 
 

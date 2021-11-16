@@ -1,7 +1,13 @@
 from rest_framework import serializers
-from Users.models import Poco_User
+
+
+from rest_framework import serializers
+
+from Users.models import CustomPocoUser
+
 
 class UserSerializer(serializers.ModelSerializer):
+
     class Meta:
-        model = Poco_User
-        fields =["email",'username', 'password', 'profilepic']
+        model = CustomPocoUser
+        fields = ['id', 'email', 'first_name', 'last_name']

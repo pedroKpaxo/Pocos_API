@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
-  title: ''
-  version: ''
+  title: 'POCOS_API'
+  version: '0.01'
 paths:
   /pocos/:
     get:
