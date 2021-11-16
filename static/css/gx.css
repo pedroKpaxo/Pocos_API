@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+.box{
+    margin: 1rem;
+}
+.box p{
+    margin-top: 0.5rem;
+}
+code{
+    background-color: beige;
+    background: beige;
+    margin-top: 3px;
+}
