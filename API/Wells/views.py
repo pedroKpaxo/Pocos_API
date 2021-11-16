@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import django_filters.rest_framework
 
 # Create your views here.
 from Wells.models import Well
@@ -8,11 +9,16 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import generics
+from rest_framework import filters
 
 class WellList(generics.ListAPIView):
     
     queryset= Well.objects.all()
     serializer_class = WellSerializer
+    filter_backends = [django_filters.rest_framework.DjangoFilterBackend]
+
+    filterset_fields = ['bacia', 'estado',]
+    
 
     
 

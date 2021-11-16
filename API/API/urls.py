@@ -20,5 +20,6 @@ from Wells import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Wells.urls'))
+    path('', include('Wells.urls')),
+    path('', include('Users.urls')),
 ]
