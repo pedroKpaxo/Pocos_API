@@ -6,7 +6,7 @@ An API for well geographic information.
 Build with Django-Rest Framework.
 With support for GIS models, with the DFR-GIS framework.
 
-[preview](intropic.png)
+![Alt text](intropic.png?raw=true "Screen Shot")
 
 There are two main features.
 One is a public list, that no one but the admin can Update and Delete.
