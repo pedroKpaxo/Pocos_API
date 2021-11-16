@@ -16,6 +16,9 @@ from django.core.mail import send_mail
 
 
 class CustomPocoUser(AbstractUser):
+    '''
+    Custom User Extendind
+    '''
     username = None
     email = models.EmailField(_('email address'), unique=True)
     profilepic = models.FileField(default=None)

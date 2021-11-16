@@ -7,7 +7,11 @@ from Users.models import CustomPocoUser
 
 
 class UserSerializer(serializers.ModelSerializer):
+    '''
+    Basic serializer class for the Custom User Model , extending the ModelSerializer class.
+    '''
 
     class Meta:
         model = CustomPocoUser
-        fields = ['id', 'email', 'first_name', 'last_name']
+        # - Add Fields
+        fields = ['id', 'email','profilepic']
