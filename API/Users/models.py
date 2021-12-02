@@ -11,13 +11,9 @@ from django.utils.translation import gettext_lazy as _
 from django.core.mail import send_mail
 # Create your models here.
 
-
-
-
-
 class CustomPocoUser(AbstractUser):
     '''
-    Custom User Extendind
+    Custom User Extending an abstract user
     '''
     username = None
     email = models.EmailField(_('email address'), unique=True)
