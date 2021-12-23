@@ -3,7 +3,7 @@
 Uma API para informações geográficas de poços de petroleo.
 An API for well geographic information.
 
-Build with Django-Rest Framework.
+Built with Django-Rest Framework.
 With support for GIS models, with the DFR-GIS framework.
 
 ![Alt text](intropic.png?raw=true "Screen Shot")
